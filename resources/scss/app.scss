@@ -1,0 +1,73 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+@import './components/create.scss';
+@import './components/edit.scss';
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	padding: 30px;
+	background: $gray;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.add-todo {
+	padding: 20px;
+
+	a {
+		display: block;
+		margin: auto;
+		width: fit-content;
+		text-align: center;
+		text-decoration: none;
+		border-bottom: 1px solid $blue;
+	}
+}
+
+.todos {
+	margin: auto;
+	padding: 30px;
+
+	.todo {
+		border: 1px solid $gray;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 10px;
+		max-width: 500px;
+		margin: 5px auto;
+
+		.edit, .text, .delete {
+			font-size: 20px;
+		}
+
+		.edit {
+			text-decoration: none;
+			color: $gold;
+		}
+
+		.text {
+			display: inline-block;
+			padding-left: 30px;
+			padding-right: 30px;
+			text-align: center;
+		}
+
+		.delete {
+			background: none;
+			border: none;
+			color: $red;
+			cursor: pointer;
+		}
+	}
+}

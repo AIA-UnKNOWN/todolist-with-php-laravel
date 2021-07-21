@@ -1,0 +1,23 @@
+.wrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.todo-edit-field {
+		border: 1px solid $gray;
+		padding: 20px;
+
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		form {
+
+			input, button {
+				padding: 5px 10px;
+			}
+		}
+	}
+}
